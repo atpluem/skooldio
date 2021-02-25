@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+
+import engi from './img/engi.svg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Rectangle">
+        <img className="engi" src={engi}></img>
+        <div className="faculty">
+          <div className="topic">
+            คณะวิศวกรรมศาสตร์
+          </div>
+          <div className="subtopic">
+            สาขาวิศวกรรมทั่วไป
+          </div>
+          <div className="university">
+            จุฬาลงกรณ์มหาวิทยาลัย
+          </div>
+        </div>
+        <br></br>
+        <hr></hr>
+        <div className="open">รอบที่เปิด</div>
+        <div className="round">
+          รอบที่ 4: Addmission
+        </div>
+        <br></br>
+        <hr></hr>
+        <div className="sub"></div>
+        <div className="score">
+          ดูสัดส่วนคะแนน
+        </div>
+        <br></br>
+        <hr></hr>
+        <div className="interest">
+          10 คนที่สนใจ
+          </div>
+      </div>
     </div>
   );
 }
