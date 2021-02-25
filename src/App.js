@@ -3,6 +3,14 @@ import './App.css';
 import engi from './img/engi.svg';
 
 function App() {
+
+  const fetchdata = () => {
+    fetch('https://tcas-assets.skooldio.com/tmp/mock_tcaster_api.json')
+    .then(response => response.json())
+    
+  } 
+
+
   return (
     <div className="App">
       <div className="Rectangle">
